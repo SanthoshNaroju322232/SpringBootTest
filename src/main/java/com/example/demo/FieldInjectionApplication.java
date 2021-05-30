@@ -11,7 +11,7 @@ public class FieldInjectionApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext run = SpringApplication.run(FieldInjectionApplication.class, args);
-	
+	System.out.println("hii");
 	UserService bean = run.getBean(UserService.class);
 	 bean.register();
 	
